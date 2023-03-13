@@ -1,0 +1,112 @@
+// Importar variables y mixins
+@import 'base/_variables';
+@import 'base/_mixins';
+
+// Importar estilos globales
+@import 'base/_normalize';
+@import 'base/_utilidades';
+@import 'base/_globales';
+
+.no-webp .inicio {
+    background-image: url(../../../assets/img/Home-img.jpg) ; 
+}
+.webp .inicio {
+    background-image: url(../../../assets/img/Home-img.webp);
+}
+
+.header{
+        background-color: $AzulOscuro;
+        padding: 1rem 0 3rem 0;
+
+        &.inicio{
+            background-position: center center;
+            background-size: cover;
+
+            @include tablet{
+                min-height: 70rem;
+            }
+        }
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+
+.navegacion{
+
+    display: none;
+
+    @include tablet{
+        display: flex;
+        align-items: center;
+    }
+
+    a{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+        border-bottom: solid;
+        border-color: $blanco;
+        padding: 0 2rem 0 2rem;
+
+        
+        &:hover{
+            color: $Azul;
+            border-color: $Azul;
+        }
+
+        @include tablet {
+            margin-right: 2rem;
+            font-size: 1.8rem;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+
+.navbar-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet{
+        min-height: 70rem;
+    }
+
+    h1 {
+        text-align: left;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 1.5;
+        max-width: 50rem;
+       span{
+        color: $Azul;
+       }
+
+        
+    }
+}
+
+.mobile-menu{
+    @include tablet{
+        display: none;
+    }
+
+    img{
+        width: 5rem;
+    }
+}
+
+

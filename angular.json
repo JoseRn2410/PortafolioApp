@@ -30,7 +30,14 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/modernizr.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/app/shared/scss"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -98,7 +105,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/modernizr.js"
+            ]
           }
         }
       }
