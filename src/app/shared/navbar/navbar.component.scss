@@ -23,7 +23,7 @@
             background-size: cover;
 
             @include tablet{
-                min-height: 70rem;
+                min-height: 85rem;
             }
         }
 }
@@ -60,7 +60,7 @@
 
         
         &:hover{
-            color: $Azul;
+            color: $verde;
             border-color: $Azul;
         }
 
@@ -109,4 +109,107 @@
     }
 }
 
-
+.content {
+    font-size: 36px;
+    font-family: Consolas, monospace;
+    color: #ecf0f1;
+    height: 40px;
+    position: relative;
+  }
+  .content:before {
+    content: '[';
+    position: relative;
+  }
+  .content:after {
+    content: ']';
+    position: relative;
+  }
+  .content:after,
+  .content:before {
+    color: #16a085;
+    font-size: 42px;
+    animation: 2s linear 0s normal none infinite opacity;
+    -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+    -moz-animation: 2s ease-out 0s normal none infinite opacity;
+    -o-animation: 2s ease-out 0s normal none infinite opacity;
+  }
+  @-webkit-keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes change {
+    0% {
+      margin-top: 0;
+    }
+    15% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: -40px;
+    }
+    40% {
+      margin-top: -40px;
+    }
+    50% {
+      margin-top: -80px;
+    }
+    65% {
+      margin-top: -80px;
+    }
+    75% {
+      margin-top: -40px;
+    }
+    85% {
+      margin-top: -40px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  @keyframes change {
+    0% {
+      margin-top: 0;
+    }
+    15% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: -40px;
+    }
+    40% {
+      margin-top: -40px;
+    }
+    50% {
+      margin-top: -80px;
+    }
+    65% {
+      margin-top: -80px;
+    }
+    75% {
+      margin-top: -40px;
+    }
+    85% {
+      margin-top: -40px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
