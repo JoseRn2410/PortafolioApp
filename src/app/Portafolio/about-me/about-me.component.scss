@@ -6,6 +6,7 @@
 @import 'base/_normalize';
 @import 'base/_utilidades';
 @import 'base/_globales';
+@import 'base/animaciones';
 
 
 .about {
@@ -44,48 +45,3 @@
     background: linear-gradient(-90deg, hsla (0, 0%, 96.9%, 0), #f7f7f7);
 }
 
-.slider:after{
-    position: absolute;
-    right: 0;
-    content: '';
-    height: 21rem;
-    background: linear-gradient(
-        90deg,
-        hsla(0, 0%, 96.9%, 0),
-        hsla(0, 0%, 96.9%, 0.99) 99%
-    );
-}
-
-.slider .slide-track{
-    display: flex;
-    animation: scroll 35s linear infinite;
-    -webkit-animation: scroll 35s linear infinite;
-    width: calc(24rem * 10);
-}
-
-.slider .slide{
-    display: flex;
-}
-
-.slider .slide img{
-    width: 18rem;
-    height: 20rem;
-    padding: 1rem;
-    background-color: white;
-    cursor: pointer;
-    margin: 2rem;
-    border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-                rgba(0, 0, 0, 0.3) 0px 1px;
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc (-24rem * 5));
-        transform: translateX(calc(-24rem * 5));
-    }
-}
