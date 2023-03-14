@@ -47,9 +47,10 @@
 .content {
     font-size: 36px;
     font-family: Consolas, monospace;
-    color: #ecf0f1;
+    color:black; 
     height: 40px;
     position: relative;
+    font-weight: bold;
   }
   .content:before {
     content: '[';

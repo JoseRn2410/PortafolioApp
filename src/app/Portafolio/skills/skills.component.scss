@@ -1,0 +1,27 @@
+// Importar variables y mixins
+@import 'base/_variables';
+@import 'base/_mixins';
+
+// Importar estilos globales
+@import 'base/_normalize';
+@import 'base/_utilidades';
+@import 'base/_globales';
+@import 'base/animaciones';
+
+.slider{
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.slider:before{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: '';
+    width: 23.958%;
+    height: 21rem;
+    background: linear-gradient(-90deg, hsla (0, 0%, 96.9%, 0), #f7f7f7);
+}
